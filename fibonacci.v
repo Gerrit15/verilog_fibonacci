@@ -55,7 +55,7 @@ reg clk = 1'b0;
 wire ce;
 wire t;
 always #1 clk = !clk;
-downcounter countchip(.fib_num(4'b1100), .clk(clk), .ce(ce));
+downcounter countchip(.fib_num(`N), .clk(clk), .ce(ce));
 toggler togglechip(.clk(clk), .ce(ce), .t(t));
 
 wire [7:0] mem1_in;
