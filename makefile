@@ -1,5 +1,5 @@
 ./a.out: ./fibonacci.v
-	iverilog ./fibonacci.v -W all -DN=4\'b0111
+	iverilog ./fibonacci.v -W all -DN=4\'b0110
 
 run: ./a.out
 	./a.out
