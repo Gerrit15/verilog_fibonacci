@@ -77,7 +77,7 @@ module testbench;
     wire [7:0] fin_value;
     fibchip fibonacci_chip(.outval(fin_value));
     initial begin
-        #60 $stop;
+        #20 $stop;
     end
 
     initial
